@@ -20,27 +20,27 @@ exit - the memory will be freed and the program will be exited
 
 # Developed functions 
 
-1. add_last
+1. add_last - 
 int add_last(void **arr, int *len, data_structure *data);
 
 The function adds an element to the end of the vector arr. It receives the address of the generic vector (arr), the address of the length of the vector represented in the number of elements in the vector (len), and the pointer to the structure to pass the element (data). The length is increased at the end of the operations. If the operations were completed successfully, then the function will return 0, otherwise it will return a value different from 0.
 
-2. add_at
+2. add_at - 
 int add_at(void **arr, int *len, data_structure *data, int index)
 
 Similar to the add_last function, add_at receives the address of the vector, the address of the length and the address of the data structure, but also the index at which the element is wanted to be stored. If the index is greater than 0, nothing will be added and an error will be returned. If it is greater than the length of the vector, it will be added to the end.
 
-3.find
+3.find - 
 void find(void *data_block, int len, int index)
 
 The function receives the data vector, its length and the index at which the display is desired. If the index is greater than the length or less than 0, nothing is displayed. Otherwise, the element from the respective index will be displayed according to the specified format
 
-4.deleta_at
+4.delete_at - 
 int delete_at(void **arr, int *len, int index)
 
 The function receives the beginning of the vector, the number of current elements in the vector, and the index of the element which will be moved. The programm iterates through vector until that index and removes the element from the vector, taking care to move the remaining bits after the element, in place of the removed element.
 
-5.print
+5.print - 
 print(void *arr, int len)
 
 The print function receives a pointer to the data vector and the number of elements in the vector. It goes through the vector and prints the data inside the vector corresponding to the data type inside it.
